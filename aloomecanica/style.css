@@ -1,35 +1,212 @@
-  /* style.css */
+/* style.css */
 
-  * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Signika Negative', sans-serif;
-  }
+* {
+  margin: 0;
+  padding: 0;
+}
 
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #f0f8ff;
-  }
+body h2 {
+  font-family: 'Signika Negative', sans-serif;
+}
 
-  .center {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-  }
+body p{
+  font-family: 'Varela Round', sans-serif;
+}
 
-  .clear {
-    clear: both;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+}
 
-  .icone {
-    float: right;
-  }
+.center {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
 
-  .icone img {
-    width: 70px;
-    float: right;
+.clear {
+  clear: both;
+}
+
+.icone {
+  float: right;
+}
+
+.icone img {
+  width: 70px;
+}
+
+.menu {
+  background-color: #EB8136;
+  font-family: 'Varela Round', sans-serif;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu li a {
+  display: block;
+  color: #f0f8ff;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: #161861;
+}
+
+.video-principal {
+  padding-bottom: 10px;
+}
+
+.video-principal iframe {
+  width: 960px;
+  height: 540px;
+}
+
+.zap {
+  padding-bottom: 20px;
+}
+
+.zap {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.titulo h2 {
+  padding: 10px;
+}
+
+.principal-container {
+  flex-direction: column;
+}
+
+.texto-principal {
+  background-color: #778caa;
+  padding-top: 20px;
+}
+
+.texto-principal p {
+  padding: 20px;
+  font-weight: 560;
+  font-size: 20px;
+}
+
+.texto-principal img {
+  width: 600px;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+
+.mapa iframe {
+  width: 600px;
+  height: 450px;
+}
+
+.mapa p{
+  padding-bottom: 20px;
+}
+
+.depoimentos-slider h2{
+  padding: 10px;
+}
+
+.depoimentos-slider {
+  max-width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+section.depoimentos-slider {
+  padding: 20px 0;
+}
+
+section.depoimentos-slider img {
+  padding: 0 20px;
+}
+
+/****SLICK SLIDER****/
+
+.slick-dotted ul {
+  list-style-type: none;
+  text-align: center;
+  position: relative;
+  margin-top: 10px;
+}
+
+.slick-dotted li {
+  display: inline-block;
+  margin: 0 7px;
+}
+
+.slick-dotted button:focus {
+  outline: 0;
+}
+
+.slick-dotted li button {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  color: #d8d8d8;
+  border-width: 0;
+  background: #d8d8d8;
+  opacity: 1;
+  cursor: pointer;
+}
+
+li.slick-active button {
+  background: #161861;
+  color: #161861;
+}
+
+.slick-slide {
+  width: 250px;
+  display: inline-block;
+}
+
+/**END SLICK**/
+
+.contatos {
+  background-color: #EB8136;
+  color: #fff;
+}
+
+.contatos-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.info {
+  padding-right: 200px;
+}
+
+.horarios {
+  text-align: right;
+  margin-right: 80px;
+  padding-left: 100px;
+}
+
+.horarios h2 {
+  margin-bottom: 5px;
+}
+
+.horarios p {
+  margin-top: 10px;
+}
+
+/* Estilos específicos para telas menores que 768px */
+@media (max-width: 768px) {
+
+  .titulo h2 {
+    font-size: 20px;
   }
 
   .menu {
@@ -37,231 +214,66 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    overflow: hidden;
-  }
-
-  .menu li {
-    float: left;
-  }
-
-  .menu li a {
-    display: block;
-    color: #f0f8ff;
-    text-align: center;
-    padding: 14px 14px;
-    text-decoration: none;
   }
 
   .menu li a:hover {
     background-color: #161861;
   }
 
-  .video-principal {
-    padding-bottom: 10px;
+  .menu li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #f0f8ff;
+    font-weight: bold;
+  }
+
+  .icone img {
+    float: right;
   }
 
   .video-principal iframe {
-    width: 960px;
-    height: 540px;
-  }
-
-  .titulo h2 {
-    padding: 10px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
   }
 
   .principal-container {
     flex-direction: column;
   }
 
-  .texto-principal {
-    background-color: #778caa;
-    padding-top: 20px;
-  }
-
   .texto-principal h2 {
-    padding-left: 60px;
-    padding-right: 150px;
-    padding-bottom: 20px;
+    padding: 20px;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .texto-principal img {
-    width: 600px;
-    margin: 0 auto;
+    width: 350px;
     border: 2px solid black;
   }
 
   .mapa iframe {
-    width: 600px;
-    height: 450px;
-  }
-
-  .mapa p{
-    padding-bottom: 20px;
-  }
-
-  .depoimentos-slider h2{
-    padding: 10px;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
   }
 
   .depoimentos-slider {
-    max-width: 700px;
     margin: 0 auto;
-    overflow: hidden;
-  }
-
-  section.depoimentos-slider {
-    padding: 20px 0;
-  }
-
-  section.depoimentos-slider img {
-    padding: 0 20px;
-  }
-
-  /****SLICK SLIDER****/
-
-  .slick-dotted ul {
-    list-style-type: none;
-    text-align: center;
-    position: relative;
-    margin-top: 10px;
-  }
-
-  .slick-dotted li {
-    display: inline-block;
-    margin: 0 7px;
-  }
-
-  .slick-dotted button:focus {
-    outline: 0;
-  }
-
-  .slick-dotted li button {
-    width: 16px;
-    height: 16px;
-    border-radius: 8px;
-    color: #d8d8d8;
-    border-width: 0;
-    background: #d8d8d8;
-    opacity: 1;
-    cursor: pointer;
-  }
-
-  li.slick-active button {
-    background: #161861;
-    color: #161861;
-  }
-
-  .slick-slide {
-    width: 250px;
-    display: inline-block;
-  }
-
-  /**END SLICK**/
-
-  .contatos {
-    background-color: #EB8136;
-    color: #fff;
-  }
-
-  .contatos-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
   }
 
   .info {
-    padding-right: 200px;
+    padding: 10px;
   }
 
   .horarios {
-    text-align: right;
-    margin-right: 80px;
-    padding-left: 100px;
+    text-align: center;
+    margin: 10px;
+    padding: 0;
   }
 
   .horarios h2 {
     margin-bottom: 5px;
   }
-
-  .horarios p {
-    margin-top: 10px;
-  }
-
-  /* Estilos específicos para telas menores que 768px */
-  @media (max-width: 768px) {
-
-    .titulo h2 {
-      font-size: 20px;
-    }
-
-    .menu {
-      background-color: #EB8136;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .menu li a:hover {
-      background-color: #161861;
-    }
-
-    .menu li a {
-      display: block;
-      text-align: center;
-      text-decoration: none;
-      color: #f0f8ff;
-      font-weight: bold;
-    }
-
-    .icone img {
-      float: right;
-    }
-
-    .video-principal iframe {
-      width: 300px;
-      height: 300px;
-      margin: 0 auto;
-    }
-
-    .principal-container {
-      flex-direction: column;
-    }
-
-    .texto-principal h2 {
-      padding: 20px;
-      font-weight: normal;
-      font-size: 18px;
-    }
-
-    .texto-principal img {
-      width: 350px;
-      margin: 0 auto;
-      border: 2px solid black;
-    }
-
-    .mapa iframe {
-      margin: 0 auto;
-      width: 300px;
-      height: 300px;
-    }
-
-    .depoimentos-slider {
-      margin: 0 auto;
-    }
-
-    .info {
-      padding: 10px;
-    }
-
-    .horarios {
-      text-align: center;
-      margin: 10px;
-      padding: 0;
-    }
-
-    .horarios h2 {
-      margin-bottom: 5px;
-    }
-  }
+}
