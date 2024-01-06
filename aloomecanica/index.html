@@ -1,181 +1,179 @@
-<DOCTYPE! html>
-  <html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-  <head>
-    <title>Alo Mecanica Oficina</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <meta name=description
-      content="Oferecemos serviços que vão desde troca de óleo até reparos de motor, freios e suspensão." />
-    <meta name="keywords" content="Conserto de Carros - Mecânico Teresina - Oficina Mecânica" />
-    <meta name="robots" content="index,follow" />
-    <meta property="og:title" content="Alo Mecanica Oficina" />
-    <meta property="og:site_name" content="Oficina Alo mecanica " />
-    <meta property="og:locale" content="pt_BR" />
-    <meta property="og:description"
-      content="Oferecemos serviços que vão desde troca de óleo até reparos de motor, freios e suspensão. - Venha nos visitar e confie em nós para manter seu carro em perfeitas condições." />
-    <meta property="og:url" content="https://alomecanica.com.br/" />
-    <meta property="og:image" content="https://alomecanica.com.br/local/aloomecanicaoficina.png" />
-    <meta property="og:imagem:type" content="image/png" />
-    <meta itemProp="image" content="https://alomecanica.com.br/local/aloomecanicaoficina.png" />
-    <meta name="next-head-count" content="4" />
-    <link href="style.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Oferecemos serviços que vão desde troca de óleo até reparos de motor, freios e suspensão.">
+  <meta name="keywords" content="Conserto de Carros, Mecânico Teresina, Oficina Mecânica">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Alo Mecanica Oficina">
+  <meta property="og:site_name" content="Oficina Alo mecanica">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:description" content="Oferecemos serviços que vão desde troca de óleo até reparos de motor, freios e suspensão. - Venha nos visitar e confie em nós para manter seu carro em perfeitas condições.">
+  <meta property="og:url" content="https://alomecanica.com.br/">
+  <meta property="og:image" content="https://alomecanica.com.br/local/aloomecanicaoficina.png">
+  <meta property="og:imagem:type" content="image/png">
+  <meta itemProp="image" content="https://alomecanica.com.br/local/aloomecanicaoficina.png">
+  <meta name="next-head-count" content="4">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <title>Alo Mecanica Oficina</title>
+</head>
 
-  </head>
+<body>
+  <section class="topo">
+    <div id="home"></div>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a href="#Somos">Somos</a></li>
+      <div class="icone">
+        <li><img src="icones/aloomecanica.png" width="70px" alt="Aloo ícone" /></li>
+      </div>
+    </ul>
+  </section>
 
-  <body>
-    <section class="topo">
-      <div id="home"></div>
-      <ul class="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#contato">Contato</a></li>
-        <li><a href="#Somos">Somos</a></li>
-        <div class="icone">
-          <li><img src="icones/aloomecanica.png" width="70px" alt="Aloo ícone" /></li>
-        </div>
-      </ul>
-    </section>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var menuLinks = document.querySelectorAll(".menu a");
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var menuLinks = document.querySelectorAll(".menu a");
+      menuLinks.forEach(function (link) {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          var targetId = this.getAttribute("href").substring(1);
+          var targetElement = document.getElementById(targetId);
 
-        menuLinks.forEach(function (link) {
-          link.addEventListener("click", function (e) {
-            e.preventDefault();
-            var targetId = this.getAttribute("href").substring(1);
-
-            var targetElement = document.getElementById(targetId);
-
-            if (targetElement) {
-              window.scrollTo({
-                top: targetElement.offsetTop,
-                behavior: "smooth",
-              });
-            }
-          });
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: "smooth",
+            });
+          }
         });
       });
+    });
+  </script>
 
-    </script>
+  <section class="titulo">
+    <div class="center">
+      <h2>Buscando o Melhor Mecânico pro seu carro?</br> Agora você encontrou!</h2>
+    </div>
+  </section>
 
-    <section class="titulo">
-      <div class="center">
-        <h2>Buscando o Melhor Mecânico pro seu carro?</br> Agora você encontrou!
+  <section class="video-principal">
+    <div class="center">
+      <iframe src="https://www.youtube.com/embed/Dk7AFrfMxm4?si=JutRuBx8urvPWC6V&amp;" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+        O seu navegador não suporta vídeos.
+      </iframe>
+    </div>
+  </section>
+
+  <section class="zap">
+    <div class="center" id="whatsapp-button">
+      <a href="https://api.whatsapp.com/send?phone=558699229554" target="_blank"
+        style="text-decoration: none; color: #fff; background-color: #25d366; width: 200px; padding: 10px; text-align: center; border-radius: 5px; cursor: pointer;">
+        CHAME NO WHATSAPP
+      </a>
+    </div>
+  </section>
+
+  <section class="texto-principal">
+    <div id="Somos" class="center">
+      <div class="principal-container">
+        <img src="local/aloomecanicaoficina.png" alt="Imagem Oficina" />
+        <p>
+          Procurando o melhor mecânico para o seu carro? Agora você encontrou!
+          Na Alô Mecânica, nossa equipe está dedicada a resolver os problemas do seu veículo com máxima economia,
+          eficácia e total transparência!</br></br>
+          Oferecemos exatamente o que o seu carro precisa para sair daqui em perfeito estado, deixando você satisfeito!
+          </br></br>
+          Especializados em serviços como troca de óleo, freios, suspensão, injeção eletrônica,
+          alinhamento/balanceamento, motores e mecânica geral, nossa eficiência é garantida!
+          </br></br>
+          Além disso, todos os nossos serviços contam com uma garantia de 3 meses, para que você possa dormir
+          tranquilamente, sabendo que está seguro e fez o melhor investimento para o seu veículo!</br></br>
+          O nosso engenheiro mecânico chefe, Aluísio Filho, convida você a desfrutar da nossa sala VIP enquanto
+          aguarda pelo seu veículo.
+          </br></br>
+          Na Alô Mecânica, a honestidade e transparência são os nossos princípios!
+          Entre em contato pelo WhatsApp ou faça-nos uma visita!
+          Esperamos por você em breve!
+        </p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="video-principal">
-      <div class="center">
-        <iframe src="https://www.youtube.com/embed/Dk7AFrfMxm4?si=JutRuBx8urvPWC6V&amp;" title="YouTube video player"
-          frameborder="0" allow="accelerometer; autoplay; 
-                    clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-          O seu navegador não suporta videos.
-        </iframe>
-    </section>
+  <section class="mapa">
+    <div class="center">
+      <h2>Quer saber como nos encontrar?</h2>
+      <p>Clique aqui para abrir no seu GPS:<a target="_blank" href="https://cutt.ly/lwbeTgCW"><img
+            src="icones/marcador.png" alt="Link para maps"></a></p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15897.135731068578!2d-42.7832227!3d-5.0576544!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e3b16181f7685%3A0x88962693367b6bd!2sAl%C3%B4%20Mecanica!5e0!3m2!1spt-BR!2sbr!4v1695771327277!5m2!1spt-BR!2sbr"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
 
-    <section class="texto-principal">
-      <div id="Somos">
-        </id>
-        <div class="center">
-          <div class="principal-container">
-            <img src="local/aloomecanicaoficina.png" alt="Imagem Oficina"/>
-            <h2>
-              </br>
-              Procurando o melhor mecânico para o seu carro? Agora você encontrou!
-              Na Alô Mecânica, nossa equipe está dedicada a resolver os problemas do seu veículo com máxima economia,
-              eficácia e total transparência!</br></br>
-              Oferecemos exatamente o que o seu carro precisa para sair daqui em perfeito estado, deixando você
-              satisfeito!
-              </br></br>
-              Especializados em serviços como troca de óleo, freios, suspensão, injeção eletrônica,
-              alinhamento/balanceamento, motores e mecânica geral, nossa eficiência é garantida!
-              </br></br>
-              Além disso, todos os nossos serviços contam com uma garantia de 3 meses, para que você possa dormir
-              tranquilamente, sabendo que está seguro e fez o melhor investimento para o seu veículo!</br></br>
-              O nosso engenheiro mecânico chefe, Aluísio Filho, convida você a desfrutar da nossa sala VIP enquanto
-              aguarda pelo seu veículo.
-              </br></br>
-              Na Alô Mecânica, a honestidade e transparência são os nossos princípios!
-              Entre em contato pelo WhatsApp ou faça-nos uma visita!
-              Esperamos por você em breve!
-            </h2>
-          </div>
-        </div>
-    </section>
-
-    <section class="mapa">
-      <div class="center">
-        <h2>Quer saber como nos encontrar?</h2>
-        <p>Clique aqui para abrir no seu GPS:<a target="_blank" href="https://cutt.ly/lwbeTgCW" /><img
-          src="icones/marcador.png" alt="Link para maps"></p></a>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15897.135731068578!2d-42.7832227!3d-5.0576544!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e3b16181f7685%3A0x88962693367b6bd!2sAl%C3%B4%20Mecanica!5e0!3m2!1spt-BR!2sbr!4v1695771327277!5m2!1spt-BR!2sbr"
-          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+  <section class="depoimentos-slider">
+    <div class="center">
+      <h2>Veja os depoimentos dos nossos clientes</h2>
+      <div class="slider-container">
+        <img src="depoimentos/dark.png" width="332px" />
+        <img src="depoimentos/guilherme.png" width="332px" />
+        <img src="depoimentos/vanda.png" width="332px" />
+        <img src="depoimentos/wolner.png" width="332px" />
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="depoimentos-slider">
-      <div class="center">
-        <h2>Veja os depoimentos dos nossos clientes</h2>
-        <div class="slider-container">
-          <img src="depoimentos/dark.png" width="332px" />
-          <img src="depoimentos/guilherme.png" width="332px" />
-          <img src="depoimentos/vanda.png" width="332px" />
-          <img src="depoimentos/wolner.png" width="332px"/>
+  <script src="js/jquery.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script type="text/javascript">
+    $('section.depoimentos-slider .slider-container').slick({
+      dots: true,
+      arrows: false,
+      infinite: false,
+      speed: 1000,
+      slidesToShow: 1,
+      autoplay: true,
+      centerMode: false,
+      autoplaySpeed: 3000,
+      pauseOnHover: false,
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      }]
+    });
+  </script>
+
+  <section class="contatos">
+    <div id="contato" class="center">
+      <div class="contatos-container">
+        <div class="horarios">
+          <h2>Horário de Funcionamento:</h2>
+          <p> Segunda a Sexta: 8 Horas às 12 horas </br>
+            14 Horas às 18 horas </br>
+            Sábado: 8 Horas ás 12 horas
+          </p>
+        </div>
+
+        <div class="info">
+          <h2>Confira nossas redes sociais!</h2>
+          <a target="_blank" href="https://instagram.com/aloo.mecanica/"><img src="icones/Instagram.png" width="48px"
+              alt="Instagram" /></a>
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=558699229554"><img src="icones/Zap.png" width="48px"
+              alt="WhatsApp" /></a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+</body>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script type="text/javascript">
-      $('section.depoimentos-slider .slider-container').slick({
-        dots: true,
-        arrows: false,
-        infinite: false,
-        speed: 1000,
-        slidesToShow: 1,
-        autoplay: true,
-        centerMode: false,
-        autoplaySpeed: 3000,
-        pauseOnHover: false,
-        responsive:
-          [
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 1
-              }
-            }
-          ]
-      });  
-    </script>
-
-    <section class="contatos">
-      <div id="contato">
-        </id>
-        <div class="center">
-          <div class="contatos-container">
-            <div class="horarios">
-              <h2>Horário de Funcionamento:</h2>
-              <p> Segunda a Sexta: 8 Horas às 12 horas </br>
-                14 Horas às 18 horas </br>
-                Sábado: 8 Horas ás 12 horas
-              </p>
-            </div>
-
-            <div class="info">
-              <h2>Confira nossas redes sociais!</h2>
-              <a target="_blank" href="https://instagram.com/aloo.mecanica/" />
-              <img src="icones/Instagram.png" width="48px" alt="Instagram" /></a>
-              <a target="_blank" href="https://api.whatsapp.com/message/HQKQTOEFMX2BH1?autoload=1&app_absent=0" />
-              <img src="icones/Zap.png" width="48px" alt="WhatsApp" /></a>
-            </div>
-          </div>
-        </div>
-    </section>
-  </body>
-
-  </html>
+</html>
