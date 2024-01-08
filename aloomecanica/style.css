@@ -14,9 +14,8 @@ body p{
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background-color: #f0f8ff;
+  margin-top: 2%;
 }
 
 .center {
@@ -24,10 +23,6 @@ body {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-}
-
-.clear {
-  clear: both;
 }
 
 .icone {
@@ -45,6 +40,10 @@ body {
   padding: 0;
   margin: 0;
   overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 .menu li {
@@ -97,6 +96,7 @@ body {
   padding: 20px;
   font-weight: 560;
   font-size: 20px;
+  text-align: left;
 }
 
 .texto-principal img {
@@ -249,7 +249,7 @@ li.slick-active button {
   }
 
   .texto-principal img {
-    width: 350px;
+    width: 320px;
     border: 2px solid black;
   }
 
