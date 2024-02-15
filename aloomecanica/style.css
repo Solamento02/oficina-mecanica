@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-body h2 {
+body h1, h2 {
   font-family: 'Signika Negative', sans-serif;
 }
 
@@ -79,7 +79,26 @@ body {
   font-family: 'Varela Round', sans-serif;
 }
 
-.titulo h2 {
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.titulo h1 {
   padding: 10px;
 }
 
@@ -205,75 +224,82 @@ li.slick-active button {
 /* Estilos específicos para telas menores que 768px */
 @media (max-width: 768px) {
 
-  .titulo h2 {
-    font-size: 20px;
-  }
+.titulo h1 {
+  font-size: 20px;
+  padding-top: 20px;
+}
 
-  .menu {
-    background-color: #EB8136;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
 
-  .menu li a:hover {
-    background-color: #161861;
-  }
+.menu {
+  background-color: #EB8136;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-  .menu li a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    color: #f0f8ff;
-    font-weight: bold;
-  }
+.menu li a:hover {
+  background-color: #161861;
+}
 
-  .icone img {
-    float: right;
-  }
+.menu li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #f0f8ff;
+  font-weight: bold;
+}
 
-  .video-principal iframe {
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-  }
+.icone img {
+  float: right;
+}
 
-  .principal-container {
-    flex-direction: column;
-  }
+.zap {
+  padding-bottom: 20px;
+}
 
-  .texto-principal h2 {
-    padding: 20px;
-    font-weight: normal;
-    font-size: 18px;
-  }
+.video-principal iframe {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
 
-  .texto-principal img {
-    width: 320px;
-    border: 2px solid black;
-  }
+.principal-container {
+  flex-direction: column;
+}
 
-  .mapa iframe {
-    margin: 0 auto;
-    width: 300px;
-    height: 300px;
-  }
+.texto-principal p {
+  padding: 20px;
+  font-weight: 560;
+  font-size: 18px;
+}
 
-  .depoimentos-slider {
-    margin: 0 auto;
-  }
+.texto-principal img {
+  width: 320px;
+  border: 2px solid black;
+}
 
-  .info {
-    padding: 10px;
-  }
+.mapa iframe {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+}
 
-  .horarios {
-    text-align: center;
-    margin: 10px;
-    padding: 0;
-  }
+.depoimentos-slider {
+  margin: 0 auto;
+}
 
-  .horarios h2 {
-    margin-bottom: 5px;
-  }
+.info {
+  padding: 10px;
+}
+
+.horarios {
+  text-align: center;
+  margin: 10px;
+  padding: 0;
+}
+
+.horarios h2 {
+  margin-bottom: 5px;
+}
+
 }
