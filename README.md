@@ -9,3 +9,8 @@ I did this website using HTML, CSS, JS to an mechanical workshop and his visual 
 Sometimes I update it, while I study design.
 
 <a target="_blank" href="https://alomecanica.com.br">alomecanica.com.br</a>
+
+
+# WhatsApp Float
+this WhatsApp button float code was not made by me, credits:
+<a target="_blank" href="https://codepen.io/demoonkevin/pen/MvPEpV">https://codepen.io/demoonkevin/pen/MvPEpV</a>
